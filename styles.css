@@ -1,0 +1,146 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+
+header {
+    background-color: #003366;
+    padding: 20px;
+    color: white;
+    text-align: center;
+}
+.encabezado {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Separa el logo, el título y el otro logo */
+    padding: 10px 20px;
+}
+
+
+/* Tamaño del logo derecho */
+.logo-secundario img {
+    width: 180px; /* Ajusta según el tamaño deseado */
+    height: auto;
+}
+
+/* Asegura que el título se mantenga centrado */
+.titulo-principal {
+    font-size: 50px;
+    text-align: center;
+    flex-grow: 1; /* Hace que el título ocupe el espacio restante */
+}
+
+/* Menú alineado al centro */
+.menu {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: white;
+    background-color: #007bff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    
+}
+
+/* Espacio entre el título y el menú */
+nav {
+    margin-top: 10px;
+}
+
+/* Carreras */
+main {
+    padding: 20px;
+}
+
+.carrera {
+    display: flex;
+    margin-bottom: 30px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.carrera img {
+    max-width: 250px;
+    margin-right: 20px;
+    border-radius: 8px;
+}
+
+.carrera .info {
+    max-width: 600px;
+}
+
+.carrera h2 {
+    color: #003366;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+
+
+.carrera .btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #003366;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+/* Datos de contacto */
+#contacto {
+    background-color: #fff;
+    padding: 20px;
+    margin-top: 40px;
+    border-radius: 8px;
+}
+
+#contacto h2 {
+    color: #003366;
+}
+
+footer {
+    background-color: #003366;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+.volver {
+    position: fixed; /* Fija el botón en la pantalla, sin que se mueva al hacer scroll */
+    left: 20px; /* Distancia desde el borde izquierdo */
+    bottom: 20px; /* Distancia desde el borde inferior */
+    z-index: 1000;
+  }
+  
+  .volver-btn {
+    display: inline-block;
+    background-color: #e0a33a; /* Color de fondo */
+    color: white; /* Color del texto */
+    padding: 10px 20px;
+    font-size: 16px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease; /* Transición suave para el color de fondo */
+  }
+  
+  .volver-btn:hover {
+    background-color: #c87d22; /* Cambia el color de fondo al hacer hover */
+  }

@@ -1,0 +1,341 @@
+/* 
+  ------------------------------
+    RESETEO BÁSICO
+  ------------------------------
+*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+  background-image: url(img/fondo\ fache.jpg);
+  line-height: 1.6;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+
+
+/*
+  ------------------------------
+    CONTENEDOR .container
+  ------------------------------
+  Usado para limitar el ancho y centrar contenido
+*/
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/*
+  ------------------------------
+    BARRA SUPERIOR
+  ------------------------------
+*/
+.top-bar {
+  background-color: #e0a33a; /* Ajusta el color a tu gusto */
+  color: #fff;
+  font-size: 0.9rem;
+  padding: 0.5rem 0;
+}
+
+.top-bar-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contact-info span {
+  margin-right: 1rem;
+}
+
+.user-links a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 0.5rem;
+}
+
+.user-links a:hover {
+  text-decoration: underline;
+}
+
+/*
+  ------------------------------
+    CABECERA (HEADER)
+  ------------------------------
+*/
+.main-header {
+  background-color: #003366; /* Ajusta el color a tu gusto */
+  padding: 1rem 0;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+/* Logo */
+.logo {
+  text-align: right;
+
+}
+
+.logo img{
+  width: 130px;
+  height: auto;
+}
+
+/* Menú principal */
+.main-nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  
+}
+
+.main-nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.main-nav a:hover {
+  text-decoration: underline;
+}
+.main-nav{
+font-size: 48px;
+
+}
+
+.contact-info{
+  font-size: 20px;
+}
+
+.user-links{
+  font-size: 20px;
+}
+
+/*
+  ------------------------------
+    SECCIÓN HÉROE
+  ------------------------------
+*/
+.hero {
+  background: url('https://via.placeholder.com/1200x600') no-repeat center center;
+  background-size: cover;
+  color: #fff;
+  padding: 4rem 0;
+  text-align: left;
+  position: relative;
+}
+
+/* Oscurecer un poco la imagen de fondo */
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
+
+/* Contenido encima del overlay */
+.hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 600px;
+}
+
+.hero-content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero-content p {
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+}
+
+.btn-primary {
+  display: inline-block;
+  background-color: #e0a33a;
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+.btn-primary:hover {
+  background-color: #e0a33a;
+}
+
+/*
+  ------------------------------
+    SECCIÓN CURSO DESTACADO
+  ------------------------------
+*/
+.featured-course {
+  background-color: #f9f9f9;
+  padding: 2rem 0;
+}
+
+.course-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  align-items: center;
+}
+
+.course-info {
+  flex: 1 1 300px;
+}
+
+.course-date {
+  display: inline-block;
+  background-color: #003366;
+  color: #fff;
+  padding: 0.3rem 0.6rem;
+  border-radius: 4px;
+  margin-bottom: 0.5rem;
+}
+
+.course-info h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.course-info p {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.course-image {
+  flex: 1 1 300px;
+  text-align: center;
+}
+
+.course-image img {
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+/*
+  ------------------------------
+    PIE DE PÁGINA (FOOTER)
+  ------------------------------
+*/
+.main-footer {
+  background-color: #e0a33a;
+  color: #fff;
+  padding: 1rem 0;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.main-footer p {
+  margin: 0;
+}
+
+/*
+  ------------------------------
+    MEDIA QUERIES
+  ------------------------------
+*/
+@media (max-width: 768px) {
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+  .hero-content p {
+    font-size: 1rem;
+  }
+  .course-wrapper {
+    flex-direction: column;
+  }
+  .dropdown input[type="checkbox"] {
+    display: none;
+  }
+}
+  /* Estilo general del menú */
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+/* Ocultar el checkbox */
+.dropdown input[type="checkbox"] {
+  display: none;
+}
+
+/* Botón del dropdown */
+.dropbtn {
+  cursor: pointer;
+  color: white;
+  padding: 10px 15px;
+  display: inline-block;
+}
+
+/* Contenedor del submenú */
+.dropdown-content {
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.4s ease;
+  background-color: #333;
+  position: absolute;
+  margin-top: 10px;
+  border-radius: 5px;
+  width: 1100px;
+  z-index: 1000;
+}
+.dropdown-content ul li  {
+  display: block;
+}
+
+.dropdown-content ul li a {
+  padding: 10px 20px;
+  margin: 0;
+  padding: 0px;
+  display: block;
+}
+
+/* Estilo de los enlaces del submenú */
+.dropdown-content a {
+  display: block;
+  padding: 12px 16px;
+  color: white;
+  text-decoration: none;
+}
+
+/* Mostrar el submenú cuando está chequeado */
+.dropdown input[type="checkbox"]:checked ~ .dropdown-content {
+  max-height: 500px; /* Ajusta según la cantidad de elementos */
+}
+/* Estilos para la página principal */
+#principal img {
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+    display: block;
+    border-radius: 8px; /* Agrega bordes redondeados a las imágenes */
+}
+
+/* Si solo quieres que se apliquen a las imágenes de index.html */
+#imagen-1 {
+    border: 3px solid #333; /* Borde para la imagen 1 */
+}
+
+#imagen-2 {
+    border: 3px solid #444; /* Borde para la imagen 2 */
+}

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Instituto Británico Mercantil IBM</title>
+  <!-- Vinculamos el CSS -->
+  <link rel="stylesheet" href="home.css" />
+</head>
+<body>
+  <!-- Barra superior con contacto y registro/login -->
+  <div class="top-bar">
+    <div class="container top-bar-content">
+      <div class="contact-info">
+        <span>¿Tienes alguna pregunta?</span>
+        <span>68598908</span>
+        <span>|</span>
+        <span>info@ibm.edu</span>
+      </div>
+      <div class="user-links">
+        <a href="#">Registro</a>
+        <span>/</span>
+        <a href="#">Iniciar Sesión</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Menú principal -->
+  <header class="main-header">
+    <div class="container nav-container">
+      <!-- Logo o nombre de la institución -->
+      <div class="logo">
+        <a href="#"><img src="img/logo ibm.png" /></a>
+      </div>
+      <!-- Menú de navegación -->
+      <nav class="main-nav">
+        <ul>
+          <li><a href="nosotros.html">Sobre nosotros</a></li>
+          <li><a href="index.html">Carreras</a></li>
+          <li class="dropdown">
+            <input type="checkbox" id="toggle-normativas">
+            <label for="toggle-normativas" class="dropbtn">Normativas</label>
+          
+            <!-- Mover UL fuera de LABEL, pero al mismo nivel que INPUT -->
+            <ul class="dropdown-content">
+              <li><a href="normativa.html">Normativa1</a></li>
+              <li><a href="normativa1.html">Normativa2</a></li>
+              <li><a href="normativa2.html">Normativa3</a></li>
+              <li><a href="normativa3.html">Normativa4</a></li>
+            </ul>
+          </li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Sección de héroe con gran imagen de fondo -->
+  <section class="hero">
+    <div class="container hero-content">
+      <h1>ESTUDIA HOY Y EMPIEZA  A CONTRUIR TU FUTURO CON "IBM"</h1>
+      <p>
+        En el Instituto Británico Mercantil "IBM" nos enorgullecemos de ofrecer
+        el contenido más actualizado. Todo  lo que  necesitas  para  un  futuro 
+        profecional destacado y brillante .
+      </p>
+      <a href="#" class="btn-primary">Leer más</a>
+    </div>
+  </section>
+  <!-- Sección destacada: ejemplo de curso, fecha, imagen -->
+  <section class="featured-course">
+    <div class="container course-wrapper">
+      <div class="course-info">
+        <span class="course-date">09 Abril 2025</span>
+        <h2>INTRODUCCIÓN </h2>
+        <p>
+          Aprende a configurar y administrar tu tiempo y empieza estudiando con
+          nosotros. las clases son totalmente presenciles y con contenidos de 
+          estudios muy versatiles y compresibles.
+        </p>
+      </div>
+      <div class="course-image">
+        <!-- Ajusta la ruta de la imagen a tu gusto -->
+        <img src="img/33.jpg" alt="Curso destacado" />
+      </div>
+    </div>
+  </section>
+  <!-- Sección de pie de página (footer) opcional -->
+  <footer class="main-footer">
+    <div class="container">
+      <p>© 2025 Instituto Británico Mercantil (IBM). Todos los derechos reservados.</p>
+    </div>
+  </footer>
+</body>
+</html>
